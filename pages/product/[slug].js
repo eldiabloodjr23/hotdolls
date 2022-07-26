@@ -49,11 +49,11 @@ const ProductDetails = ({ product, products }) => {
               (20)
             </p>
           </div>
-          <h4>Details: </h4>
+          <h4>Detaily: </h4>
           <p>{details}</p>
           <p className="price">${price}</p>
           <div className="quantity">
-            <h3>Quantity:</h3>
+            <h3>Ks:</h3>
             <p className="quantity-desc">
               <span className="minus" onClick={decQty}><AiOutlineMinus /></span>
               <span className="num">{qty}</span>
@@ -61,14 +61,14 @@ const ProductDetails = ({ product, products }) => {
             </p>
           </div>
           <div className="buttons">
-            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
-            <button type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+            <button type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Přidat do košíku</button>
+            <button type="button" className="buy-now" onClick={handleBuyNow}>Koupit</button>
           </div>
         </div>
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2>You may also like</h2>
+          <h2>Mohlo by se vám líbit</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (
